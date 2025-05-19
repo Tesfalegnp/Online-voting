@@ -1,0 +1,88 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full app container */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background image styling */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.pixabay.com/animation/2025/02/06/17/23/17-23-54-364_512.gif') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.6); /* Darken the background for better contrast */
+}
+
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+}
+
+/* Padding for content so it doesn't go under navbar/footer */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure content doesn't hide behind fixed navbar/footer */
+.form-container, .welcome-container, .login-container, .admin-dashboard {
+  flex: 1;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
